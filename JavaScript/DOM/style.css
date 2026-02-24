@@ -1,0 +1,33 @@
+button{
+    background-color: rgba(47, 0, 255, 0.827);
+    padding: 15px;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    display: flex;
+    justify-self: center;
+    margin-top: 50px;
+    cursor: pointer;
+}
+#titulo{
+    cursor: pointer;
+}
+button:hover {
+    background-color: #41D3BD; /* Nova cor de fundo */
+    color: #fffff2; /* Opcional: muda a cor do texto */
+}
+img{
+    display: flex;
+    justify-self: center;
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    
+}
+h1{
+    text-align: center;
+}
+img:hover{
+    content: url('https://i.pinimg.com/736x/07/b6/3f/07b63ff9a793388fdb99376d88fdc25e.jpg');
+}

@@ -16,7 +16,7 @@ let media = soma / 2
 alert("a media é: " +media);
 console.log("a média deu "+media);
 
-let nome = prompt("digite seu nome: ")
+let nome = prompt("digite seu nome: ");
 function analisarTexto(texto) {
     console.log("Tamanho:", texto.length);
     console.log("Maiúsculo:", texto.toUpperCase());
