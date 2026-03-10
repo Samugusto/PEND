@@ -61,3 +61,33 @@ if (inputnome.value == ""){
     mensagem.textContent="Seu nome foi enviado com sucesso!"
 }
 });
+//atividade 7
+let ref = document.querySelector("#ref");
+let inputval = document.querySelector("#val");
+let parag = document.querySelector("#parag");
+ref.addEventListener("click", function(){
+    let email = inputval.value
+    if (email.includes(".") && !email.includes("@")){
+    parag.textContent="Falta o '@' no Email!"}
+    else if (email.includes("@") && !email.includes(".")){
+        parag.textContent="Falta o '.' no Email!"
+    }else if (!email.includes("@") && !email.includes(".")){
+        parag.textContent= "Email Inválido!"
+    }else{
+        parag.textContent="Email válido!"
+    }
+});
+//atividade 8
+let inputsenha = document.querySelector("#senha");
+let resr = document.querySelector("#resr");
+let rsr = document.querySelector("#rsr")
+inputsenha.addEventListener("keyup", function(){
+    resr.textContent = inputsenha.value.length;
+    if (inputsenha.value.length == 6){
+        rsr.textContent = "sua senha é de segurança média :/"
+    } else if (inputsenha.value.length > 6){
+        rsr.textContent = "Sua senha é de segurança avançada ;)"
+    }else if (inputsenha.value.length < 6){
+        rsr.textContent = "Sua senha está bem fraca ;( "
+    }
+});
