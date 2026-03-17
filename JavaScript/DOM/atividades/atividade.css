@@ -1,9 +1,11 @@
-.oculto{
+.oculto {
     display: none;
 }
+
 body {
     font-family: "Comic Sans MS", "Comic Sans", cursive !important;
 }
-*{
+
+* {
     text-align: center;
 }
