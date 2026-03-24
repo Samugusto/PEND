@@ -7,5 +7,71 @@ body {
 }
 
 * {
+
     text-align: center;
+}
+
+
+div {
+    position: relative;
+}
+#buttn{
+    cursor: pointer;
+    width: 150px;
+    line-height: 40px;
+    border: 0;
+    background-color: rgb(21, 0, 255);
+    outline: 0;
+    font-size: 15px;
+    padding: 0px 20px 0px 20px;
+    border-radius: 20px;
+}
+#butto{
+    cursor: pointer;
+    width: 150px;
+    line-height: 40px;
+    border: 0;
+    background-color: rgb(255, 0, 0);
+    outline: 0;
+    font-size: 15px;
+    padding: 0px 20px 0px 20px;
+    border-radius: 20px;
+}
+button{
+     cursor: pointer;
+    width: 150px;
+    line-height: 40px;
+    border: 0;
+    background-color: aqua;
+    outline: 0;
+    font-size: 15px;
+    padding: 0px 20px 0px 20px;
+    border-radius: 20px;
+}
+
+button:hover {
+    transition: 0.5s;
+    color: white;
+    background-color: rgb(92, 182, 152);
+    background-position: left;
+}
+
+
+
+input {
+    width: 150px;
+    line-height: 40px;
+    border-color: rgba(0, 0, 0, 0.482);
+    outline: 0;
+    font-size: 15px;
+    padding: 0px 20px 0px 20px;
+    border-radius: 20px 0 20px 0;
+}
+
+.icone {
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 670px;
+    top: 15%;
 }
