@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>piadinha</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      /* Boa prática para evitar problemas de tamanho */
+    }
+
+    body {
+      background-color: black;
+      /* Faz o body ocupar 100% da altura da janela do navegador */
+      height: 100vh;
+      /* Ativa o Flexbox no pai */
+      display: flex;
+      /* Centraliza na horizontal */
+      justify-content: center;
+      /* Centraliza na vertical */
+      align-items: center;
+      overflow: hidden;
+      /* Evita barras de rolagem desnecessárias */
+    }
+
+    img {
+      border-radius: 6px;
+      cursor: pointer;
+      width: 300px;
+      /* Opcional: suaviza a transição de clique */
+      transition: transform 0.2s;
+    }
+
+    h1 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      top: 500px;
+      position: absolute;
+      color: white;
+    }
+    h4{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      top: 550px;
+      position: absolute;
+      color: rgba(255, 255, 255, 0.485);
+    }
+
+    img:active {
+      transform: scale(0.95);
+      /* Efeito visual de clique */
+    }
+  </style>
+</head>
+
+<body>
+
+  <img id="meuGif" src="img/Captura de tela 2026-04-07 140436.png"
+    data-gif="https://i.pinimg.com/originals/ec/94/44/ec9444e99816b5ff8fcdefca5320ab7a.gif"
+    alt="Clique para ver a animação">
+    <h4>espera carregar antes de interagir...</h4>
+  <h1>NÃO CLIQUE EM MIM!</h1>
+
+<script>
+  const gifElement = document.getElementById('meuGif');
+  const gifURL = gifElement.getAttribute('data-gif');
+  const duracaoDoGif = 1000;
+
+  let clicado = false;
+
+  
+  const imgPreload = new Image();
+  imgPreload.src = gifURL;
+
+  gifElement.addEventListener('click', function () {
+
+    if (clicado) return;
+    clicado = true;
+
+    this.src = gifURL;
+
+    setTimeout(() => {
+      window.close();
+      window.location.href = "about:blank";
+    }, duracaoDoGif);
+
+  });
+</script>
+</body>
+
+</html>

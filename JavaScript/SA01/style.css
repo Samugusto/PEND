@@ -1,9 +1,220 @@
+header {
+    color: white; /* cor das letras*/
+    background-color: #00160d;/* cor do fundo */
+    padding-top: 20px;/* seu tamanho */
+    padding-bottom: 20px; /* ainda seu tamanho esticando para baixo*/
+    border-radius: 10px; /* borda recortada do header*/
+    box-shadow: 0 4px 30px rgba(142, 148, 143, 0.218); /* sombras dinámicas */
+}
+
+h3 {
+    font-size: 13px; /* frase de efeito debaixo da logo*/
+}
+
 body {
-    font-family: Arial;
-    text-align: center;
+    background-image: url(https://i.pinimg.com/736x/77/c6/24/77c6240cac8ed308010d92510402056a.jpg);/* imagem de fundo*/
+    font-family: Arial;/* fonte das letras*/
+    text-align: center;/* alinhamento*/
 }
 
 input {
-    padding: 5px;
-    width: 200px;
+    padding: 5px;/* tamanho do input*/
+    width: 200px; /* largura do input*/
+    line-height: 20px;/* tamanho das linhas*/
+    border: 2px solid #ffffff;/* cor das bordas*/
+    font-size: 15px;/* tamanho das letras*/
+    border-radius: 6px; /* recorte do container*/
+    transition: 0.5s ease-in-out;
 }
+input:hover{
+    scale: 1.01;
+    box-shadow: 0 4px 30px rgba(0, 255, 47, 0.607); /* sombra do input*/
+}
+
+* {
+    padding: 0px;/* remover padding do chrome*/
+    margin: 0px;/* remover margin do chrome*/
+}
+
+.titulo {
+    border-radius: 10px;/* recorte da borda da sombra*/
+    box-shadow: 0 4px 30px rgba(0, 255, 47, 0.607); /* sombra do container*/
+    margin-top: 30px;/* distancia do header*/
+    padding-top: 80px;/* tamanho esticado para cima */
+    padding-bottom: 10px; /* tamanho esticado para baixo*/
+    border-radius: 10px 10px 0px 0px; /* borda dinámica do titulo */
+    margin-left: 550px;/* centralização esquerda*/
+    margin-right: 550px;/* centralização direita */
+    color: white; /* cor da fonte*/
+    background-color: #00df82; /* cor de fundo */
+}
+
+.formulario {
+    border-radius: 10px;/* recorte da borda da sombra*/
+    box-shadow: 0 4px 30px rgba(0, 255, 47, 0.607);/* sombra container*/
+    font-weight: bold;/* fonte em negrito*/
+    border-radius: 0px 0px 20px 20px;/* borda dinámica*/
+    padding-top: 20px;/* tamanho esticado para cima*/
+    margin-left: 550px;/* centralizado esquerda*/
+    margin-right: 550px;/* centralizado direita*/
+    background-color: #e5fbf2df;/* cor de fundo*/
+    text-align: center;/* centralizar textos*/
+    margin-bottom: 20px;
+}
+
+.icone {
+    font-size: 18px;/* tamanho do icone*/
+    cursor: pointer;/* caso o mouse ficar por cima ele fica apontando*/
+    position: absolute;/* posição absoluta no caso intangivel*/
+    right: 664px;/* 664 pixels empurrado para direita*/
+    top: 62.3%;/* empurrado por cima*/
+    transition: all 0.5s ease;/* transição hover*/
+}
+
+.icone:hover {
+    color: #00df82;/* cor do hover*/
+}
+
+.icone2:hover {
+    color: #00df82;/* cor do hover*/
+}
+
+.icone2 {
+    font-size: 18px;/* tamanho do icone*/
+    cursor: pointer;/* caso o mouse ficar por cima ele fica apontando*/
+    position: absolute;/* posição absoluta no caso intangivel*/
+    right: 664px;/* 664 pixels empurrado para direita*/
+    top: 83.5%;/* empurrado por cima*/
+    transition: all 0.5s ease;/* transição hover*/
+}
+
+button {
+    cursor: pointer;/* caso o mouse ficar por cima ele fica apontando*/
+    font-weight: bold;/* fonte em negrito*/
+    background-color: #00df82;/* cor de fundo*/
+    color: white;/* cor da fonte*/
+    border: 0px;/* sem bordas*/
+    border-radius: 10px;/* recorte de bordas*/
+    padding: 13px;/* tamanho do botão*/
+    transition: all 0.5s ease;/* transição suave*/
+}
+
+button:hover {
+    transform: translateY(-2px);/* subir 2px para cima quando haver hover*/
+    box-shadow: 0 4px 30px rgba(0, 255, 47, 0.805);/* sombra do botão*/
+    background-color: #255e46;/* cor de fundo*/
+}
+
+.imagem {
+    border-radius: 10px;/* recorte de borda da imagem*/
+    padding: 10px;/* tamanho do fundo*/
+    background-color: #00df82;/* cor de fundo*/
+    position: absolute;/* intangivel*/
+    top: 130px;/* empurrado por cima*/
+    left: 723px;/* Ajuste a posição */
+    z-index: 10; /* Garante que a imagem fique em cima */
+    transition: 0.1s ease-in-out
+}
+.imagem:active{
+    transform: scale(0.90);
+}
+
+.progress-container {
+    width: 50%;/* tamanho */
+    background-color: #dbcaca;/* cor de fundo*/
+    border-radius: 5px;/* borda recortada*/
+    height: 10px;/* tamanho*/
+    margin-top: 5px;/* distancia */
+    margin-left: 105px;/* distancia da esquerda*/
+    margin-bottom: 10px;/* distancia de baixo*/
+}
+
+.progress-bar {
+    height: 100%;/* tamanho da barra*/
+    width: 0%;/* largura da barra (cor) inicia com 0% */
+    background-color: #dc3545;/* vermelho inicial */
+    border-radius: 5px;/* borda*/
+    transition: width 0.3s ease, background-color 0.3s ease;/* animação suave */
+}
+
+#lista {
+    list-style: none;/* remove bolinhas da lista*/
+    display: flex;/* alinha items em coluna*/
+    flex-direction: column;/* items em coluna*/
+    align-items: center;/* centraliza items*/
+    gap: 8px;/* espaço entre items*/
+    margin-top: 10px;/* espaço acima da lista*/
+}
+
+#lista li {
+    display: flex;/* alinha input e botão lado a lado*/
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+#lista input {
+    width: 200px;
+    margin: 0;
+}
+
+#lista button {
+    position: absolute;
+    left: 830px;
+    padding: 5px 12px;/* botão menor*/
+    background-color: #f50000;/* vermelho para remover*/
+    border-radius: 5px;/* borda redonda*/
+}
+
+#lista button:hover {
+    background-color: #cc0000;/* vermelho mais escuro no hover*/
+}
+
+#icone3 {
+    color: #f50000;
+    display: none; /*ocultar icone */
+    top: 294px;/*distancia de cima*/
+    position: absolute;/* intangivel*/
+    left: 840px;/* distancia da esquerda*/
+}
+
+#icone4 {
+    color: #00ff37f1;
+    display: none; /*ocultar icone */
+    top: 294px;/*distancia de cima*/
+    position: absolute;/* intangivel*/
+    left: 840px;/* distancia da esquerda*/
+}
+
+#icone5 {
+    color: #f50000;
+    display: none;
+    top: 365px;/*distancia de cima*/
+    position: absolute;/* intangivel*/
+    left: 840px;/* distancia da esquerda*/
+}
+
+#icone6 {
+    color: #00ff37f1;
+    display: none;
+    top: 365px;/*distancia de cima*/
+    position: absolute;/* intangivel*/
+    left: 840px;/* distancia da esquerda*/
+}
+#icone7 {
+    color: #f50000;
+    display: none;
+    top: 510px;/*distancia de cima*/
+    position: absolute;/* intangivel*/
+    left: 840px;/* distancia da esquerda*/
+}
+
+#icone8 {
+    color: #00ff37f1;
+    display: none;
+    top: 510px;/*distancia de cima*/
+    position: absolute;/* intangivel*/
+    left: 840px;/* distancia da esquerda*/
+}
+
+/* Tom não falou para colocar mais nada (cansei também)*/
