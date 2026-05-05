@@ -28,7 +28,6 @@ header {
     z-index: 1000;
     background-color: #c4c7d8;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 0.75rem 1rem;
@@ -50,7 +49,6 @@ header a {
     padding: 0.55rem 1rem;
     border-radius: 10px;
     transition: 0.3s ease-in-out;
-    white-space: nowrap;
 }
 
 header a:hover {
@@ -249,65 +247,3 @@ header a:hover {
     font-size: 120%;
 }
 
-@media (max-width: 1024px) {
-    .responsivo {
-        flex-wrap: wrap;
-        /* media query */
-    }
-}
-
-@media (max-width: 500px) {
-    .responsivo {
-        flex-wrap: wrap;
-        /* media query */
-    }
-
-    .motivador {
-        font-size: calc(110% + 1vw);
-        padding-top: 20%;
-    }
-}
-
-
-@media (min-width: 768px) {
-    .responsivo {
-        flex-wrap: wrap;
-        /* media query */
-    }
-
-    .itemimg {
-        height: auto;
-        width: 30%;
-    }
-
-    header a {
-        font-size: 70%;
-    }
-
-    #saiba {
-        font-size: 160%;
-    }
-
-    .corzinha2 {
-        font-size: 120%;
-    }
-
-    .banner {
-        height: 300px;
-    }
-
-    .botao {
-        font-size: 100%;
-    }
-    .motivador {
-        font-size: calc(110% + 1vw);
-        padding-top: calc(10% + 1vw);
-    }
-    .title {
-        font-size: 120%;
-    }
-
-    .deta {
-        font-size: 80%;
-    }
-}
