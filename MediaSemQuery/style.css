@@ -249,7 +249,7 @@ header a:hover {
     font-size: 120%;
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1024px) {
     .responsivo {
         flex-wrap: wrap;
         /* media query */
@@ -264,23 +264,12 @@ header a:hover {
 
     .motivador {
         font-size: calc(110% + 1vw);
-        padding-top: 22%;
-    }
-        .banner {
-        height: 300px;
-    }
-        .botao {
-        font-size: 100%;
-    }
-       #saiba {
-        font-size: 160%;
-    }
-       #saiba2 {
-        font-size: 160%;
+        padding-top: 20%;
     }
 }
 
-@media (max-width: 768px) {
+
+@media (min-width: 768px) {
     .responsivo {
         flex-wrap: wrap;
         /* media query */
@@ -298,9 +287,6 @@ header a:hover {
     #saiba {
         font-size: 160%;
     }
-    #saiba2 {
-        font-size: 160%;
-    }
 
     .corzinha2 {
         font-size: 120%;
@@ -315,7 +301,7 @@ header a:hover {
     }
     .motivador {
         font-size: calc(110% + 1vw);
-        padding-top: calc(20% + 1vw);
+        padding-top: calc(10% + 1vw);
     }
     .title {
         font-size: 120%;
