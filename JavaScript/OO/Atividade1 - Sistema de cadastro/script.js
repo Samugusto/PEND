@@ -23,17 +23,22 @@ class Loja {
     exibir() {
         const resultado = document.querySelector("#resultado");
         resultado.innerHTML = "";
-        this.Produtos.forEach(produto => {
+        this.Produtos.forEach((produto, posicao) => {
             resultado.innerHTML += `
         <div>
             <p>Nome: ${produto.nome}</p>
             <p>Preço: ${produto.aplicarDesconto()}</p>
             <p>Categoria: ${produto.categoria}</p>
-            <p>Desconto: ${produto.desconto}</p>
+            <p>Desconto: ${produto.desconto}%</p>
+            <button onclick="loja.excluir(${posicao})">Excluir</button>
         </div>
         `;
         });
 
+    }
+    excluir(posicao){
+        this.Produtos.splice(posicao, 1);
+        this.exibir()
     }
 }
 const nome = document.querySelector("#nome");
