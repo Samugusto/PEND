@@ -50,7 +50,7 @@ const desconto = document.querySelector("#desconto");
 const botao = document.querySelector("#botaoCadastrar");
 botao.addEventListener("click", function () {
     const produto = new Produto(nome.value, preco.value, categoria.value, desconto.value);
-    loja.adicionarProduto(produto);
+    loja.adi    cionarProduto(produto);
     produto.aplicarDesconto();
     loja.exibir();
 });
@@ -58,7 +58,7 @@ const loja = new Loja()
 
 const dados = localStorage.getItem("Produtos");
 
-if (dados) {
+if (dados) {    
     const produtosSalvos = JSON.parse(dados);
 
     produtosSalvos.forEach((produtoSalvo) => {
