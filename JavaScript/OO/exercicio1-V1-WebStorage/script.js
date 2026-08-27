@@ -50,7 +50,7 @@ const desconto = document.querySelector("#desconto");
 const botao = document.querySelector("#botaoCadastrar");
 botao.addEventListener("click", function () {
     const produto = new Produto(nome.value, preco.value, categoria.value, desconto.value);
-    loja.adi    cionarProduto(produto);
+    loja.adicionarProduto(produto);
     produto.aplicarDesconto();
     loja.exibir();
 });

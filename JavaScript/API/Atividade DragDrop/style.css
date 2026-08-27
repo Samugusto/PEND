@@ -1,0 +1,55 @@
+body {
+  font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+.destaque{
+    color: rgb(226, 59, 59);
+}
+
+.cozinha {
+    display: flex;
+    gap: 20%;
+    justify-content: center;
+}
+#explosion{
+    z-index: 99;
+    position: absolute;
+    opacity: 0;
+}
+#imgC{
+    opacity: 0;
+    width: 20%;
+    transition: 0.4s ease-in;
+}
+
+#cereja {
+    width: 90px;
+    cursor: grab;
+}
+
+#produto:active {
+    cursor: grabbing;
+}
+
+#cereja img {
+    width: 100%;
+}
+
+#bolo {
+    position: relative;
+    width: 320px;
+    min-height: 250px;
+}
+
+#bolo>img {
+    display: block;
+    width: 100%;
+}
+
+#bolo #cereja {
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+}
