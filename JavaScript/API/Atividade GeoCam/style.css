@@ -32,6 +32,16 @@ body {
     margin-bottom: 2%;
 }
 
+#prec {
+    text-align: center;
+    display: flex;
+    justify-self: center;
+    background-color: var(--cor-container);
+    padding: 2%;
+    border-radius: 6px;
+    margin-bottom: 2%;
+}
+
 .containerPai {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.34);
     background: linear-gradient(to bottom,
