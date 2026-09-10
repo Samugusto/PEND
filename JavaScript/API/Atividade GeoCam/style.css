@@ -3,8 +3,21 @@
     padding: 0;
 }
 
+#canvas{
+    display: none;
+}
+
+.camfot{
+    justify-content: center;
+    gap: 2%;
+    display: flex;
+}
+
+#Foto{
+    border-radius: 20px;
+}
+
 body {
-    background-color: #e2e9ed;
     font-family: "Roboto", sans-serif;
 }
 
@@ -52,7 +65,7 @@ body {
     justify-self: center;
     width: 700px;
     height: 555px;
-    border-radius: 6px;
+    border-radius: 20px;
 }
 
 .texto1 {
@@ -75,10 +88,10 @@ body {
 }
 
 #camera {
-    height: 300px;
+    height: 250px;
     display: flex;
     justify-self: center;
-    border-radius: 6px;
+    border-radius: 20px;
 }
 
 .icon {
@@ -86,4 +99,23 @@ body {
     position: absolute;
     font-size: 220%;
     bottom: 15px;
+}
+
+#botao{
+    font-size: 15px;
+    margin-top: 5%;
+    display: flex;
+    justify-self: center;
+    padding: 2%;
+    border-radius: 12px;
+    border-style: none;
+    cursor: pointer;
+    border: 2px solid #4C5454;
+    transition: 0.1s ease-in-out;
+}
+
+#botao:hover{
+    border: 2px solid #4C5454;
+    border-left: 5px solid #4C5454;
+    border-radius: 12px;
 }
