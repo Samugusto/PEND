@@ -1,0 +1,11 @@
+#canvas{
+    border: 2px dotted black;
+}
+body{
+    text-align: center;
+    font-family: Roboto, sans-serif;
+}
+.w{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.511);
+}
