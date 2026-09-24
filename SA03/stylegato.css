@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #7b94b9;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.circulo {
+    width: 620px;
+    height: 620px;
+    background-color: #721817;
+    top: -200px;
+    left: -230px;
+    border-radius: 1000px;
+    position: fixed;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.circulo2 {
+    width: 320px;
+    height: 320px;
+    background-color: #FA9F42;
+    bottom: -80px;
+    right: -80px;
+    border-radius: 1000px;
+    position: fixed;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.quadrado {
+    width: 320px;
+    height: 320px;
+    background-color: #0B6E4F;
+    top: 10px;
+    rotate: 45deg;
+    right: -80px;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.formula {
+    width: 550px;
+    height: 550px;
+    background: linear-gradient(135deg, #D3F6DB);
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    animation: balançoOnda 6s ease-in-out infinite alternate;
+    position: absolute;
+    justify-self: center;
+    margin-top: 60px;
+    z-index: 1;
+}
+
+@keyframes balançoOnda {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    100% {
+        border-radius: 40% 60% 50% 50% / 50% 50% 40% 60%;
+    }
+}
+
+.text1 {
+    margin-top: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.cats {
+    color: #0CCE6B;
+}
+
+.text2 {
+    color: #4e82cf;
+    background-color: #4e82cf21;
+    display: table;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 4px 10px;
+    border-radius: 8px;
+}
+
+.text3 {
+    color: #E16F7C;
+    background-color: #e16f7c2a;
+    display: table;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 4px 10px;
+    border-radius: 8px;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #ffff;
+    text-align: center;
+}
+
+
+#favorito img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto 6px;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.gatoimg {
+    display: grid;
+}
+
+.divi {
+    justify-self: center;
+    padding: 0.2%;
+    background-color: #721817;
+    width: 10%;
+    border-radius: 100px;
+    margin-bottom: 50px;
+}
+
+#refresh {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-style: none;
+    font-size: 120%;
+    font-weight: bolder;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #FBFFB9;
+    color: #2B4162;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#refresh:hover {
+    background-color: #f2f79c;
+    color: #416daf;
+}
+
+.divi2 {
+    justify-self: center;
+    padding: 0.2%;
+    background-color: #721817;
+    width: 10%;
+    border-radius: 100px;
+    margin-bottom: 60px;
+}
+
+#favorito {
+    width: 50%;
+    column-count: 3;
+    column-gap: 6px;
+    padding: 20px;
+}
+
+#favorito * {
+    pointer-events: none;
+}
+
+#favorito h1 {
+    column-span: all;
+    margin-bottom: 20px;
+}
+
+#favorito>div {
+    width: 100%;
+    break-inside: avoid;
+    margin-bottom: 2px;
+}
+
+#favorito.over {
+    background-color: #aa9aba90;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+    #favorito {
+        width: 100%;
+        column-count: 3;
+        column-gap: 6px;
+    }
+
+    #favorito h1 {
+        column-span: all;
+        margin-bottom: 20px;
+    }
+
+    #favorito>div {
+        width: 100%;
+        break-inside: avoid;
+        margin-bottom: 2px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .quadrado {
+        width: 320px;
+        height: 320px;
+    }
+
+    .circulo {
+        top: -50px;
+        left: -50px;
+        width: 300px;
+        height: 300px;
+    }
+
+    #favorito {
+        width: 100%;
+        column-count: 3;
+        column-gap: 6px;
+    }
+
+    #favorito h1 {
+        column-span: all;
+        margin-bottom: 20px;
+    }
+
+    #favorito>div {
+        width: 100%;
+        break-inside: avoid;
+        margin-bottom: 2px;
+    }
+}

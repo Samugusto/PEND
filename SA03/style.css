@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    border: 2px solid #e6e6e6;
+    gap: 10%;
+    height: 100px;
+    top: 0;
+    background-color: white;
+    z-index: 20;
+}
+
+footer {
+    align-items: center;
+    height: 100px;
+    display: flex;
+    color: #ffffff;
+    background-color: #00b8ff;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.contatoe {
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+.icon {
+    cursor: pointer;
+    font-size: 200%;
+    transition: 0.3s ease-in-out;
+}
+
+.icon:hover {
+    color: #000000;
+}
+
+.logoHeader {
+    margin-left: 2%;
+    display: flex;
+    width: 180px;
+    background-color: black;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 100px;
+}
+
+.caixaP {
+    position: relative;
+}
+
+.caixaPesquisa {
+    width: 100%;
+    max-width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #00b8ff;
+    border-style: none;
+    padding: 0px 40px;
+    transition: 0.3s ease-in-out;
+}
+
+#pesquisaI {
+    top: 30%;
+    left: 5%;
+    position: absolute;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.caixaPesquisa::placeholder {
+    color: white;
+    transition: 0.3s ease-in-out;
+    font-weight: bolder;
+}
+
+.caixaPesquisa:focus {
+    background-color: white;
+}
+
+.caixaPesquisa:focus::placeholder {
+    color: #00b8ff;
+}
+
+.caixaPesquisa:focus+#pesquisaI {
+    color: #00b8ff;
+}
+
+/* botoes header */
+.botoes {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+.botao {
+    font-size: 120%;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.botao:hover {
+    color: #00b8ff
+}
+
+/* Página inicial */
+
+.noticias {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Ajustes na Notícia Principal */
+.PrinciNot {
+    position: relative;
+    margin-top: 150px;
+    width: 100%;
+    max-width: 100%;
+    height: 520px;
+    background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+        url('https://cdn.folhape.com.br/img/pc/1100/1/dn_arquivo/2024/07/daniel-pequeno-genio-bahia-leitor.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.lista-containers {
+    margin-top: 165px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+}
+
+.lista-containers2 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2px;
+    width: 100%;
+    justify-content: center;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 2px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #ffffff00;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 25%;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #d6d6d6;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.container:hover {
+    border: 2px solid #00b8ff;
+    border-radius: 5px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    font-family: var(--fonte-principal);
+    font-size: 150%;
+    font-weight: bold;
+}
+
+/* parte das noticias de baixo */
+.titulo2 {
+    font-family: var(--fonte-principal);
+    font-size: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.descNot2 {
+    font-family: var(--fonte-principal);
+    color: #000000a3;
+    text-align: center;
+    font-size: 85%;
+}
+
+/* ------ */
+
+.descNot {
+    font-family: var(--fonte-principal);
+    color: #000000a3;
+}
+
+/* noticias abaixo */
+
+.noticiaC {
+    border-radius: 6px;
+    width: 60%;
+}
+
+/* noticias de cima */
+
+.noticia2 {
+    border-radius: 6px;
+    width: 40%;
+    order: 2;
+    height: 150px;
+}
+
+.noticia {
+    border-radius: 6px;
+    width: 40%;
+    order: 2;
+}
+
+.ttl {
+    top: 80%;
+    left: 3%;
+    position: absolute;
+    color: white;
+}
+
+.destaque {
+    text-align: center;
+    position: absolute;
+    background-color: #00b8ff;
+    width: 120px;
+    padding-right: 20px;
+    font-size: 130%;
+    top: 2%;
+    left: 2%;
+    border-radius: 100px;
+    color: white;
+}
+
+.icone {
+    position: absolute;
+    width: 18px;
+    top: 15%;
+    right: 7%;
+}
+
+a[href="https://devsbee.com.br"] {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.anuncio {
+    display: block;
+    width: 400px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.destaque2 {
+    color: #00b8ff;
+
+}
+
+.say {
+    padding: 10px 10px;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .anuncio {
+        width: 50%;
+    }
+
+    .noticias {
+        flex-wrap: wrap;
+    }
+
+    .lista-containers {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .lista-containers2 {
+        flex-wrap: wrap;
+    }
+
+    .container2 {
+        width: 60%;
+    }
+
+    .noticia2 {
+        width: 30%;
+        height: 80%;
+        margin-left: 20%;
+    }
+
+    .noticia {
+        width: 30%;
+        margin-left: 20%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .ttl {
+        font-size: 120%;
+    }
+
+    .PrinciNot {
+        width: 95%;
+        height: 350px;
+    }
+}
