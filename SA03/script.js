@@ -1,3 +1,4 @@
+/* Pega a api junto com a chave de ativação dela */
 async function consultarAPI() {
     const url = 'https://api.thecatapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=0&limit=1';
     const apiKey = 'live_BF6KnW9Ripun2Sb6DpiEzb1ZvJEljl7gzahmZZbB5zhqhy4dyzs88fzaXabuZWcy';
@@ -15,6 +16,8 @@ async function consultarAPI() {
             throw new Error(`Erro na requisição: ${resposta.status}`);
         }
 
+        /* Definindo lugares do HTML para a api mandar essas informações */
+
         const dados = await resposta.json();
         const imagemGato = document.querySelector('#imagemGato');
         const mensagem = document.querySelector('#mensagem');
@@ -30,12 +33,16 @@ async function consultarAPI() {
     }
 }
 
+/* consultarAPI reenvia um pedido para regarregar a imagem */
+
 consultarAPI();
 const produto = document.querySelector("#gato");
 const carrinho = document.querySelector("#favorito");
 produto.addEventListener("dragstart", function (event) {
     event.dataTransfer.setData("text", event.currentTarget.id);
 });
+
+/* Drag over simples */
 
 carrinho.addEventListener("dragover", function (event) {
     event.preventDefault();
@@ -49,6 +56,8 @@ carrinho.addEventListener("drop", function (event) {
         return;
     }
 
+    /* Após o dragover a imagem do topo reinicia automaticamente e mantém uma cópia da imagem salva no drag and drop */
+
     const copia = produto.cloneNode(true);
     copia.id = `gato-favorito-${Date.now()}`;
     copia.draggable = false;
@@ -56,6 +65,8 @@ carrinho.addEventListener("drop", function (event) {
 
     consultarAPI();
 });
+
+/* Visual de background do local da zona drop */
 
 const zonaDrop = document.getElementById('favorito');
 let dragCounter = 0;
